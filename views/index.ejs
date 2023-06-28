@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <title>NodeJs Login and Register</title>
+
+    <style>
+        body {
+            background: url(https://cdn.neurosys.com/wp-content/uploads/2021/10/Nodejs.jpg);
+            background-size: cover;
+        }
+        .logout {
+            color: black;
+            background-color: azure;
+
+        }
+        .logout:hover {
+            background-color: grey;
+        }
+        .main {
+            display: flex;
+            flex-direction: column;
+            height: 400px;
+            justify-content: center;
+            align-items: center;
+        }
+        .foot {
+            color: lightgrey;
+            font-size: 12px;
+            position: absolute;
+            bottom: 0;
+            margin-left: 500px;
+        }
+        
+    </style>
+    
+</head>
+<body>
+
+    <div class="container">
+        <nav class="navbar mt-3">
+            <div class="container-fluid">
+              <h1 style="color: rgb(242, 250, 252);">NodeJs</h1>
+              <form class="d-flex" action="/logout?_method=DELETE" method="POST">
+                <button class="btn btn-outline-black logout" type="submit">Logout</button>
+              </form>
+            </div>
+          </nav>
+    </div>
+
+    <div class="container main">
+        <h1 style="color: white;">Hello <%= name %>!</h1>
+        <p style="color: white;">Welcome to My NodeJs App.</p>
+    </div>
+
+   <div class="foot">
+    <p class="copy">saraswathi 2023 Copyright by @saraswathi.</p>
+   </div>
+    
+
+       
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
+</body>
+
+</html>
